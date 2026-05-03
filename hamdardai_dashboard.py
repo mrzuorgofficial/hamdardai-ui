@@ -124,4 +124,3 @@ def run_counselor_app():
     if st.button("Send"):
         if msg:
             st.success("Message sent")
-Initialize session_token to fix AttributeError
