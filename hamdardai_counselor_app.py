@@ -1,4 +1,4 @@
-%%writefile hamdardai_dashboard.py
+
 import streamlit as st
 
 st.set_page_config(
