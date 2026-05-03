@@ -34,7 +34,7 @@ if st.session_state.role == "student":
 
 elif st.session_state.role == "counselor":
     from hamdardai_counselor_app import run_counselor_app
-    run_counselor_app()import streamlit as st
+    run_counselor_app()
 import uuid
 import random
 from datetime import datetime
