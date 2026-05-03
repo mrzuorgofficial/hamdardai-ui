@@ -10,6 +10,9 @@ st.set_page_config(
 if "role" not in st.session_state:
     st.session_state.role = None
 
+if "session_token" not in st.session_state:
+    st.session_state.session_token = "Not Started"
+
 # Role selection UI
 if not st.session_state.role:
     st.markdown("<h1 style='text-align:center'>HamdardAI</h1>", unsafe_allow_html=True)
@@ -121,3 +124,4 @@ def run_counselor_app():
     if st.button("Send"):
         if msg:
             st.success("Message sent")
+Initialize session_token to fix AttributeError
