@@ -88,7 +88,7 @@ def run_student_app():
 
         st.rerun()
 
-    st.caption(f"Session: {st.session_state.session_token}")import streamlit as st
+st.caption(f"Session: {st.session_state.session_token}")
 import random
 
 def run_counselor_app():
